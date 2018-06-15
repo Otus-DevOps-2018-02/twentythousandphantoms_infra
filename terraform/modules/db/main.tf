@@ -2,7 +2,7 @@ resource "google_compute_instance" "db" {
   name         = "reddit-db"
   machine_type = "g1-small"
   zone         = "${var.zone}"
-  tags         = ["reddit-db"]
+  tags         = ["reddit","reddit-db"]
 
   boot_disk {
     initialize_params {
@@ -19,6 +19,7 @@ resource "google_compute_instance" "db" {
     ssh-keys = "appuser:${file(var.public_key_path)}"
   }
 
+/*
   connection {
     type        = "ssh"
     user        = "appuser"
@@ -29,6 +30,7 @@ resource "google_compute_instance" "db" {
   provisioner "remote-exec" {
     script = "${path.module}/files/binding_any.mongodb.sh"
   }
+*/
 }
 
 resource "google_compute_firewall" "firewall_mongo" {
