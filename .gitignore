@@ -7,3 +7,6 @@ variables.json
 *.retry
 *.pem
 gce.ini
+jdauphant.nginx
+.imported_roles/
+vault.key
