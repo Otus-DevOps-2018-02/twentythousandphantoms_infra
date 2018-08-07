@@ -259,3 +259,5 @@ But I guess I would have spent more time to make all that infrastructure work co
 - learn ansible roles test with vagrant, molecula, testinfra
 - add Vagrantfile for deploy add
 - add mongo_db test
+### **
+Integration with Travis CI for autotesting
