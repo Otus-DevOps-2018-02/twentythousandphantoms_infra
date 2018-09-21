@@ -254,3 +254,10 @@ But I guess I would have spent more time to make all that infrastructure work co
 
 [37]: https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html#splitting-out-host-and-group-specific-data
 [38]: https://github.com/SethMichaelLarson/trytravis
+
+## Homework 12 (ansible-4)
+- learn ansible roles test with vagrant, molecula, testinfra
+- add Vagrantfile for deploy add
+- add mongo_db test
+### **
+Integration with Travis CI for autotesting
